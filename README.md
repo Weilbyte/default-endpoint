@@ -24,6 +24,12 @@ For example, to send an XML response you would configure the environment variabl
 
 For action type `Redirect`, `ACTION_DATA` represents the URI to redirect to.
 
+#### `ACTION_DATA` string replacements
+
+Before sending off the response, the following strings get replaced:
+* `$HOST` gets replaced with the request's host header
+* `$PATH` gets replaced with the request's path
+
 ### Docker
 
 The docker image is `weilbyte/default-service`, use `latest` tag.
